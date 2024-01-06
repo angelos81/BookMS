@@ -5,15 +5,23 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.*;
 import java.time.LocalDate;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Entity
 public class Book {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long no;
+
     private String title;
+
+    @Embedded
     private BookDesc desc;
+
     private Classfication classfication;
     private BookStatus bookStatus;
     private Location location;
