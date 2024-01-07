@@ -33,6 +33,12 @@ spring:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
 
+
+producers:
+  bootstrap-servers: localhost:9092
+  topic1:
+    name: rental_result
+
 consumer:
   topic1:
     name: rental_rent

@@ -9,7 +9,6 @@ import javax.persistence.Embeddable;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Embeddable
 public class Item {
     private Integer no;
     private String title;

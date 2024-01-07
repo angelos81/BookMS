@@ -9,7 +9,6 @@ import javax.persistence.Embeddable;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Embeddable
 public class IDName {
     private String id;
     private String name;
