@@ -32,6 +32,16 @@ spring:
       bootstrap-servers: localhost:9092
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+  consumer:
+    topic1:
+      name: rental_rent
+    topic2:
+      name: rental_return
+    groupid:
+      name: book
+
+
 server:
   port: 8082
 
